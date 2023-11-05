@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+body {
+    background-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para seções */
+.section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.promo-button:hover,
+.home-button:hover,
+.social-link:hover {
+    background-color: #1b928a;
+}
+
+/* Navbar */
+.navbar {
+    height: 50px; 
+}
+
+.navbar-nav {
+    margin-left: 0px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: #29d9d5;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #29d9d5;
+    color: black;
+}
+
+/* Seção Home */
+.home {
+    width: 100%;
+    height: calc(100vh - 50px); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(./icon/caucasus-g42eb4b76c_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85%;
+    margin-bottom: 10px;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 40px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: #29d9d5;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    20% {
+        content: "Maldivas";
+    }
+    30% {
+        content: "Hong Kong";
+    }
+    40% {
+        content: "Taj Mahal";
+    }
+    50% {
+        content: "Machu Picchu";
+    }
+    60% {
+        content: "Santorini";
+    }
+    70% {
+        content: "Aurora Boreal";
+    }
+}
+
+.home-btn {
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+    color: #29d9d5;
+    display: inline-block;
+}
+
+.home-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #29d9d5;
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home-btn a:hover {
+    background-color: white;
+    color: #29d9d5;
+}
+
+.home-button {
+    background-color: #29d9d5;
+    color: white;
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background-color: transparent;
+    color: #29d9d5;
+}
+
+.home .content p {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background: black;
+    color: white;
+}
+
+
+/* Seção de Passagens */
+.book {
+    background-color: black;
+    padding: 110px 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.book .passagens-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.book .passagens-image {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.book .passagens-image:hover {
+    transform: scale(1.1); 
+}
+
+.book .main-txt {
+    text-align: center;
+}
+
+.book .passagens-title {
+    color: black;
+}
+
+.book .passagens-form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.book .passagens-form input,
+.book .passagens-form select {
+    background-color: #29d9d5;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.book .passagens-form input[type="text"]::placeholder,
+.book .passagens-form select::placeholder {
+    color: black;
+}
+
+.book .passagens-form input:hover,
+.book .passagens-form select:hover {
+    color: #29d9d5;
+}
+
+.book .passagens-form button {
+    border-radius: 10px;
+    background-color: #29d9d5;
+    color: #29d9d5;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.book .passagens-form button:hover {
+    background-color: #29d9d5;
+}
+
+.book {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: calc(100vh - 50px); 
+ 
+}
+

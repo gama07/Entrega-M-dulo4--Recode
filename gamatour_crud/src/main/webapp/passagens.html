@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Tour</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="passagens.css"> 
+ 
+    
+    <!-- fim CSS Stylesheets -->
+    
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+            <a class="navbar-brand" href="#"><img src="./icon/logobk-removebg-preview.png" width="30" height="30" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.">Home</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="ReadController">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passagens.html">Passagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!--PASSAGENS -->
+    
+    <section class="book" id="book" >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="passagens-image-container">
+                    <img src="./icon/pass.png" alt="./icon/pass.png" class="passagens-image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                    <div class="main-txt text-center">
+                        <h1 class="passagens-title text-white">Passagens</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="passagens-form">
+                                <div class="row mb-2">
+                                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                        <select name="Destinos" class="form-control custom-select">
+                                            <option value="">Destinos</option>
+                                            <option value="Maldivas">Maldivas</option>
+                                            <option value="Taj Mahal">Taj Mahal</option>
+                                            <option value="Hong Kong">Hong Kong</option>
+                                            <option value="Machu Picchu">Machu Picchu</option>
+                                            <option value="Santorini">Santorini</option>
+                                            <option value="Aurora Boreal">Aurora Boreal</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+                                        <input type="text" class="form-control datepicker" name="daterange" placeholder="Selecione a  data">
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                                        <input type="number" class="form-control" placeholder=" qtd passageiros">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                        <input type="submit" class="btn btn-primary btn-block home-button" value="Procurar">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <label class="control control--checkbox mt-3">
+                                            <span class="caption"  style="color: white;">Salvar</span>
+                                            <input type="checkbox" checked="checked" />
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pesquisa de Passagens Section End -->
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light text-center py-3 fixed-bottom">
+        &copy; 2023 GamaTour. Todos os direitos reservados.
+    </footer>
+
+    <!-- scripts do Bootstrap via CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
